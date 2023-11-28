@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .mainGIF{
+            height: 80%;
+            width:100%;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.5em;
+            color:#e94d58;
+            margin: 15px 0;
+        }
+        .btn{
+            height: 8%;
+            width:100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            position: absolute;
+            width: 150px;
+            height: inherit;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor:pointer;
+            box-shadow: 0 2px 4px gray;
+            border:2px solid #e94d58;
+            font-size: 1.2em; 
+        }
+        button:nth-child(1) {
+            margin-left: -200px;
+            background: #e94d58;
+        }
+        button:nth-child(2) {
+        margin-right: -200px;
+        background: white;
+        color: #e94d58;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="question">Will you go out with me?</h2>
+        <img src="greet.gif" alt="dogHeart" class="mainGIF">
+        <div class="btn">
+            <button class="yBtn">Yes</button>
+            <button class="nBtn">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+
+</html>
